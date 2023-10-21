@@ -172,11 +172,26 @@ div.additional_food {
     margin: 10px auto;
 }
 
-div.additional_food > * {
-    width: 85%
+div.additional_food img {
+    width: 100%;
+    margin: 5px;
 }
 
-div.additonal_food#matcha {
+div.additional_food img:nth-child(even) {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+div.additional_food img:last-child {
+    grid-row: 3;
+}
+
+/* div.additional_food > * {
+    max-width: 85%;
+    max-height: 100%;
+} */
+
+/* div.additonal_food#matcha {
     grid-template-rows: 1fr 1fr;
 }
 
@@ -188,26 +203,28 @@ div.additional_food > img.last_food_img {
     grid-column: 1 / span 2;
     width: 40%;
     margin: auto;
-}
+} */
 
 div.travel_pics {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     width: 90%;
     margin: 10px auto;
+    justify-content: center;
 }
 
-div.travel_pics > figure:last-child {
+/* div.travel_pics > figure:last-child {
     grid-column: 1 / span 2;
     width: 40%;
     margin: auto;
-}
+} */
 
 div.travel_pics > figure {
     /* object-fit: cover; */
-    width: 80%;
-    max-height: 100%;
+    /* width: 80%;
+    max-height: 100%; */
+    margin: 20px;
 }
 
 div.travel_pics img {
